@@ -1,0 +1,256 @@
+﻿@charset "UTF-8";
+/***************************/
+/* 	トップ画面			   */
+/***************************/
+
+.inner {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+#contents {
+	padding: 100px 0;
+	max-width:1710px;
+}
+.section .inner {
+	padding: 80px 10px;
+}
+
+
+/*** スライドショー ***/
+#photo .inner{
+	margin-top:30px;
+}
+
+#photo_show_area {
+    width: 80%;
+	margin:50px auto;
+}
+
+#slides {
+	overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+	list-style: none;
+	padding: 0 200px;
+}
+
+@media screen and (max-width:670px){
+	#photo_show_area {
+		display: none;
+	}
+
+	#photo_area {
+		width:100%;
+		margin:50px auto;
+	}
+}
+
+@media screen and (min-width:670px){
+	#photo_area {
+		display: none;
+	}
+}
+
+#photo_area img {
+	width:80%;
+	text-align: center;
+}
+
+/*#### ラーメン紹介 ####*/
+#introduction_area {
+	margin:50px auto;*/
+
+	width: 80%;
+	margin: 50px auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+#introduction_area .title {
+	color:#607732;
+	font-size:25px;
+	font-weight:bold;
+	margin-bottom:25px;
+}
+
+#introduction_area .title_wrap {
+	width: 45%;
+	height: 500px;
+	position: relative;
+	float: left;
+}
+
+#introduction_area .title {
+	position:absolute;
+	top:40%;
+	left:70%;
+	display:inline;
+	transform:translate(-50%, -50%);
+	writing-mode: vertical-rl;
+	color:#607732;
+	font-size:25px;
+	font-weight:bold;
+}
+
+#introduction_area .introduction {
+    margin-right: 20px;
+	width:45%;
+    float: right;
+    text-align: left;
+}
+#introduction_area .introduction p{
+	font-size: 14px;
+ 	line-height: 250%;
+	margin-left:10px;
+	margin-right: 190px;
+}
+
+.cb{
+  	/* floatを解除 */
+	clear: both;
+}
+
+@media (max-width:670px) {
+	#introduction_area {
+	    width: 100%;
+	    -ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+		
+	}
+	#introduction_area .title {
+	  position:static;
+	  text-align: center;
+	  writing-mode: horizontal-tb;
+	  color:#607732;
+	  font-size:25px;
+	  font-weight:bold;
+	}
+
+	#introduction_area .title_wrap {
+		width: 100%;
+	    height: 40px;
+	}
+
+	#introduction_area img {
+	  	margin: 0 auto;
+	    float: none;
+	}
+
+	#introduction_area .introduction {
+		width:80%;
+	  	margin: 0 auto;
+	    float: none;
+	    text-align: left;
+	}
+	#introduction_area .introduction p{
+		font-size: 14px;
+	 	line-height: 250%;
+	    text-align: left;
+		margin-right:10px;
+	}
+}
+
+/*** ナビエリア ***/
+#main_navi_area {
+	width: 80%;
+	margin: 40px auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+/*-- ナビブロック --*/
+.main_navi_column {
+	width:45%;
+	margin-right: 10px;
+}
+.main_navi_column:first-child {
+	margin-left: 50px;
+}
+
+.navi_img {
+	position: relative;
+}
+
+.navi_img p {
+	position: absolute;
+	color: #959517;
+	font-weight: bold;
+	font-size: 1.5em;
+	font-style:italic;
+	text-shadow:1px 1px 1px #f2e6e6fa;
+	top: 10%;
+	left: 20%;
+}
+
+.navi_img .menu_img, .navi_img img {
+	width:250px;
+	height:200px;
+	border-radius: 50%;
+}
+
+/*-- 説明 --*/
+.main_navi_column .description {
+	font-size: 13px;
+	line-height: 180%;
+	color: #40210f;
+	margin-bottom: 10px;
+}
+
+/*-- 詳しく見る --*/
+.main_column_btn {
+	display: inline-block;
+	position: relative;
+	width: 200px;
+	height: 25px;
+	padding: 3px;
+	text-align: center;
+	text-decoration: none;
+	color: #1B1B1B;
+	background: #fff;
+	border-radius: 30px;
+	border:1px solid #1B1B1B;
+	transition: transform ease .3s;
+}
+.main_column_btn:hover {
+	 cursor: pointer;
+	 text-decoration: none;
+}
+.main_column_btn span {
+	display: inline-block;
+	text-decoration: none;	
+	transition: transform ease .3s;
+}
+.main_column_btn:hover span{
+	cursor: pointer;
+	text-decoration: none;
+	transform: translateX(6px);
+}
+
+
+@media screen and (max-width:670px){
+	#main_navi_area {
+		display:block;
+	}
+	.main_navi_column {
+	 	width:90%;
+		margin-bottom:50px;
+	}
+	.main_navi_column:first-child {
+		margin-left: 0;
+	}
+}
+

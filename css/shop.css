@@ -1,0 +1,56 @@
+﻿@charset "UTF-8";
+
+/***************************/
+/* 通信販売  		   	   */
+/***************************/
+
+/*** 商品カテゴリーエリア ***/
+#categoryarea {
+    margin-top: 50px;
+}
+#categoryarea .inner {
+	width: 1100px;
+	margin: 0 auto;
+	padding: 0;
+}
+/*-- 商品カテゴリー１ブロック --*/
+#categoryarea .inner .category_blk {
+	width: 1100px;
+	height: 320px; /* 高さ調節 */
+}
+
+#categoryarea .inner .category_blk .category_img {
+	width:409px;
+	float:left;
+}
+#categoryarea .inner .category_blk .category_text {
+	width:660px;
+	height: 300px; /* 高さ調節 */
+	float:right;
+	padding: 0;
+}
+/* タイトル */
+#categoryarea .inner .category_blk .category_text h3{
+    font-style:normal;
+	padding-bottom: 25px;
+	
+}
+/* 商品説明 */
+#categoryarea .inner .category_blk .category_text p{
+ 	font-size: 14px;
+
+}
+/* 注文はこちらボタン */
+#categoryarea .inner .category_btn {
+	text-align: center;
+	margin:60px 0 80px 0;
+}
+#categoryarea .inner .category_btn a img {
+	margin-left: 10px;
+}
+/* 注意事項 */
+#categoryarea .inner .caution {
+	padding-top: 20px;
+	padding-bottom: 50px;
+ 	font-size: 15px;
+}

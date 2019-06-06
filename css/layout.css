@@ -1,0 +1,306 @@
+﻿@charset "UTF-8";
+
+/***************************/
+/* 	ＨＰ内共通スタイル	   */
+/***************************/
+main {
+	text-align: center;
+    display: block;
+}
+
+body {
+	background-color: #ffffff;
+	color: #221814;
+	font-family: Areal , "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", Hiragino Mincho ProN , "MSP明朝","MS PMincho","MS 明朝",serif;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+/* 全体のイメージカラー(文字） */
+.imagecolor {
+	color: #323f39;;
+}
+
+/* 全体のイメージカラー(バックグラウンド） */
+.imagebackcolor {
+	background-color: #323f39;
+}
+
+/* 入力フォームのカラー */
+.imagebordercolor {
+	border: 1px #323f39; solid;
+}
+
+/* リンクの文字色 */
+a.anchorcolor{
+	color: #483d8b;
+	text-decoration: none;
+}
+a.anchorcolor:link {		/*未訪問のリンク*/
+    font-style:normal;
+    text-decoration:none;
+}
+a.anchorcolor:visited {		/* 訪問後のリンク */
+    text-decoration:none;
+}
+a.anchorcolor:hover {		/* マウスをのせたとき */
+    font-style:normal;
+    text-decoration:underline;
+}
+a.anchorcolor:active {		/* クリック中 */
+    text-decoration:underline;
+}
+
+/* 見出しスタイル(えごま見学、そば処鬼無里) */
+.baseh1style {
+	text-align: left;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	color: #FFFFFF;
+	font-size: 180%;
+	background-color: #7a7838;
+	font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, p {
+	margin: 0;
+	padding: 0;
+}
+
+/*** ヘッダーエリア ***/
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34,49,52,0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+header .inner {
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+
+
+/*-- ヘッダ部ロゴ --*/
+.header_left {
+  float: left;
+}
+
+.headerlogo {
+	text-align: left;
+	margin-top: 8px;
+	vertical-align:middle;
+}
+
+.headerlogo img {
+	width:40px;
+}
+
+
+
+.headerlogo a:link { color:#bc8e26; text-decoration:none }
+.headerlogo a:visited { color:#bc8e26; text-decoration:none }
+.headerlogo a:hover { color:#bc8e26; text-decoration:none }
+.headerlogo a:active { color:#bc8e26; text-decoration:none }
+
+/*-- ヘッダ部ナビ --*/
+.header_right {
+  float: right;
+  margin-right: -25px;
+}
+
+header .inner nav {
+	margin-top: 20px;
+}
+/* １ブロック */
+header nav .navblock img {
+	width:120px;
+}
+
+@media screen and (max-width:670px){
+	header {
+	  height: 45px;
+	}
+
+	.headerlogo img {
+		width:20px;
+  	}
+  	.headerlogo {
+		font-size: 1.7em!important;
+	}
+
+	nav .fa  {
+		color:white;
+		
+	}
+	.header_right {
+	  float: right;
+	  margin-right: -25px;
+	  margin-top:0px;
+	}
+
+	nav .navblock {
+		display:none;
+	}
+
+}
+
+@media screen and (min-width:670px){
+	header {
+  		height: 65px;
+	}
+	nav .btn {
+		display:none;
+	}
+}
+
+nav a:link { color:white; text-decoration:none }
+nav a:visited { color:white; text-decoration:none }
+nav a:hover { color:white; text-decoration:none }
+nav a:active { color:white; text-decoration:none }
+
+nav a{
+  position: relative;
+  display: inline-block;
+  transition: .3s;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+nav a::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #31aae2;
+  transition: .3s;
+  transform: translateX(-50%);
+}
+
+nav a:hover::after{
+  width: 100%;
+}
+
+nav ul li:last-child {
+	margin-right: 0;
+}
+
+
+/*** メインタイトルエリア（画面上部タイトルimg） ***/
+#page_head_area {
+	position: relative;
+}
+
+#page_head_area .inner {
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 40px
+
+}
+#page_head_area .inner .maintitle_img img {
+	width: 100%;
+	height: 150px;
+}
+
+/*** フッターエリア ***/
+footer {
+	color: #FFFFFF;
+	overflow: hidden;
+	padding-top: 30px;
+}
+footer .inner {
+	margin: 0 auto;
+}
+/*-- フッター部ナビ１ブロック --*/
+footer .inner .ftr_navi_blk {
+/*	margin-left: 300px;*/
+	text-align: center;
+}
+footer .ftr_navi {
+	display:inline-block;
+	width: 300px;
+	font-size: 14px;
+}
+footer .inner .ftr_navi ul {
+	margin: 0 40px 30px 0;
+	padding: 0;
+}
+
+footer .inner .ftr_navi li {
+	background:url(../img/top/foot_li_bg.png);
+	list-style:none;
+	margin: 10px 0;
+	text-align: left;
+	background-repeat:no-repeat;
+	line-height: 1.5;
+	padding: 9px 25px 5px !important;
+	background-position: left 10px;
+}
+/* リンク */
+footer .inner .ftr_navi a {		/*リンクされた文字*/
+	color: #FFFFFF;
+    font-style:normal;
+    text-decoration:none;
+}
+footer .inner .ftr_navi a:link {/*未訪問のリンク*/
+	color: #FFFFFF;
+    font-style:normal;
+    text-decoration:none;
+}
+footer .inner .ftr_navi a:visited {/*訪問後のリンク*/
+	color: #FFFFFF;
+    text-decoration:none;
+}
+footer .inner .ftr_navi a:hover {/*マウスをのせたとき*/
+    font-style:normal;
+    text-decoration:underline;
+}
+footer .inner .ftr_navi a:active {/*クリック中*/
+    text-decoration:underline;
+}
+/*-- ラーメン大稜 --*/
+footer .inner .ftr_name {
+	margin:2px 0;
+	text-align: center;
+	font-weight: normal;
+}
+/*-- 住所エリア --*/
+footer .address_area {
+	width: 25%;
+	height:auto;
+	margin:20px auto;
+	display:block;
+}
+
+footer address {
+	font-style: normal;
+	text-align: left;
+    font-size: 13px;
+    margin: auto;
+
+}
+footer address p{
+	padding-left:20px;
+}
+
+
+@media screen and (max-width:670px){
+	footer .address_area {
+		width: 100%;
+		margin: 50px 0;
+	}
+}
+
+
+
+/*-- copyright --*/
+footer .inner .copyright {
+	text-align: center;
+	padding:20px 0 30px 0;
+}
