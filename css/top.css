@@ -10,7 +10,7 @@
 }
 
 #contents {
-	padding: 100px 0;
+	padding: 70px 0;
 	max-width:1710px;
 }
 .section .inner {
@@ -18,14 +18,22 @@
 }
 
 
+.training {
+	color: #959517;
+	font-weight: bold;
+	font-size: 2.5em;
+	font-style:italic;
+	text-shadow:1px 1px 1px #f2e6e6fa;
+}
+
 /*** スライドショー ***/
 #photo .inner{
-	margin-top:30px;
+	margin-top:10px;
 }
 
 #photo_show_area {
     width: 80%;
-	margin:50px auto;
+	margin: 0 auto;
 }
 
 #slides {

@@ -286,7 +286,7 @@ footer address {
 
 }
 footer address p{
-	padding-left:20px;
+	padding-left:50px;
 }
 
 
@@ -295,8 +295,12 @@ footer address p{
 		width: 100%;
 		margin: 50px 0;
 	}
-}
 
+	footer address p{
+		padding-left:30px;
+	}
+
+}
 
 
 /*-- copyright --*/
