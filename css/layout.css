@@ -131,20 +131,44 @@ header nav .navblock img {
   	}
   	.headerlogo {
 		font-size: 1.7em!important;
+		margin-top: 12px;
 	}
 
-	nav .fa  {
-		color:white;
-		
+	.hamburger .fa {
+		color: white;
 	}
+
 	.header_right {
 	  float: right;
 	  margin-right: -25px;
 	  margin-top:0px;
 	}
 
-	nav .navblock {
+	.navblock {
 		display:none;
+	}
+
+	.drawer-nav {
+	  background: #666;
+	  box-shadow: 0 4px 3px -3px rgba(0, 0, 0, 0.12);
+	  z-index: 10;
+	}
+
+	.drawer-nav .drawer-menu-item {
+	  padding: 0;
+	}
+
+	.drawer-nav .drawer-menu-item {
+	  display: block;
+	  padding: 1rem 1rem 1rem 2.5rem;
+	  padding: 1rem;
+	  text-decoration: none;
+	  color: #fff;
+	  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+	}
+
+	.drawer-hamburger {
+		top:-5px;
 	}
 
 }
@@ -153,17 +177,19 @@ header nav .navblock img {
 	header {
   		height: 65px;
 	}
-	nav .btn {
+	.hamburger {
 		display:none;
 	}
+
+
 }
 
-nav a:link { color:white; text-decoration:none }
-nav a:visited { color:white; text-decoration:none }
-nav a:hover { color:white; text-decoration:none }
-nav a:active { color:white; text-decoration:none }
+.navblock nav a:link { color:white; text-decoration:none }
+.navblock nav a:visited { color:white; text-decoration:none }
+.navblock nav a:hover { color:white; text-decoration:none }
+.navblock nav a:active { color:white; text-decoration:none }
 
-nav a{
+.navblock nav a{
   position: relative;
   display: inline-block;
   transition: .3s;
@@ -171,7 +197,7 @@ nav a{
   font-weight: bold;
 }
 
-nav a::after {
+.navblock nav a::after {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -183,11 +209,11 @@ nav a::after {
   transform: translateX(-50%);
 }
 
-nav a:hover::after{
+.navblock nav a:hover::after{
   width: 100%;
 }
 
-nav ul li:last-child {
+.navblock ul li:last-child {
 	margin-right: 0;
 }
 
@@ -293,7 +319,7 @@ footer address p{
 @media screen and (max-width:670px){
 	footer .address_area {
 		width: 100%;
-		margin: 50px 0;
+		margin: 30px 0;
 	}
 
 	footer address p{
