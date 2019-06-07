@@ -18,13 +18,6 @@
 }
 
 
-.training {
-	color: #959517;
-	font-weight: bold;
-	font-size: 2.5em;
-	font-style:italic;
-	text-shadow:1px 1px 1px #f2e6e6fa;
-}
 
 /*** スライドショー ***/
 #photo .inner{
@@ -42,6 +35,7 @@
     margin: 0 auto;
 	list-style: none;
 	padding: 0 200px;
+	position: relative;
 }
 
 @media screen and (max-width:670px){
@@ -60,11 +54,35 @@
 		display: none;
 	}
 }
-
 #photo_area img {
 	width:80%;
 	text-align: center;
 }
+
+
+.training {
+	position: absolute;
+	z-index:2;
+	color: #959517;
+	font-weight: bold;
+	font-size: 2.5em;
+	font-style:italic;
+	text-shadow:1px 1px 1px #f2e6e6fa;
+	transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+	top: 30%;
+	left: 20%;
+
+
+}
+@media screen and (max-width:670px){
+.training {
+	font-size: 1.8em;
+	top: 18%;
+	left: 0;
+}
+
 
 /*#### ラーメン紹介 ####*/
 #introduction_area {
@@ -148,7 +166,7 @@
 	}
 
 	#introduction_area img {
-	  	margin: 0 auto;
+	  	margin: 10px auto;
 	    float: none;
 	}
 

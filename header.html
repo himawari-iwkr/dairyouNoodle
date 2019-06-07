@@ -1,4 +1,10 @@
-﻿		<header>
+﻿  		<header role="banner">
+		<script type="text/javascript">
+		    $1113(document).ready(function() {
+		    	$1113('.drawer').drawer();
+  			});
+		</script>
+
 			<div class="inner">
 				<div class="header_left">
 					<h1 class="headerlogo">
@@ -8,12 +14,33 @@
 					</h1>
 				</div>
 				<div class="header_right">
-					<nav>
-						<a class="navblock" href="{$root}menu_list.html"><!--<img src="img/header/img_menu.png" alt="お食事">-->メニュー</a>
-						<a class="navblock" href="{$root}online_shop.html"><!--<img src="img/header/img_cart.png" alt="通信販売">-->お持ち帰り</a>
-						<i class="btn fa fa-bars"></i>
+					<div class="navblock">
+						<nav>
+<!--							<a href="{$root}menu_list.html">メニュー</a>
+							<a href="{$root}online_shop.html">お持ち帰り</a>-->
+							<a href="{$root}menu_list.html">メニュー</a>
+							<a href="{$root}online_shop.html">お持ち帰り</a>
 
-					</nav>
+						</nav>
+					</div>
+					<div class="hamburger">
+					    <button type="button" class="drawer-toggle drawer-hamburger">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+<!--					      <span class="sr-only">toggle navigation</span>
+					      <span class="drawer-hamburger-icon"></span>-->
+					    </button>
+					    <nav class="drawer-nav" role="navigation">
+<!--					      <ul class="drawer-menu">
+					        <li><a class="drawer-menu-item" href="{$root}menu_list.html">メニュー</a></li>
+					        <li><a class="drawer-menu-item" href="{$root}online_shop.html">お持ち帰り</a></li>
+					      </ul>-->
+					      <ul class="drawer-menu">
+					        <li><a class="drawer-menu-item" href="#">メニュー</a></li>
+					        <li><a class="drawer-menu-item" href="#">お持ち帰り</a></li>
+					      </ul>
+
+					    </nav>
+					</div>
 				</div>
 			</div>
 		</header>

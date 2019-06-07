@@ -10,6 +10,13 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="js/responsiveslides.min.js"></script>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+		<!-- jquery & iScroll -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+		<!-- drawer.js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
 		<script src="js/main.js"></script>
 		<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
@@ -17,26 +24,24 @@
 		<link rel="stylesheet" href="css/top.css">
 
 		<script>
-		    $(function() {
-		      $("#slides").responsiveSlides({
-		        maxwidth: 850,
-		        fade: 2000,
-		        speed: 3000
-		      });
-		    });
+var $1113 = jQuery.noConflict(true);
+			$(function() {
+		      $("#slides").responsiveSlides({
+		        	maxwidth: 850,
+		        	fade: 2000,
+		        	speed: 3000
+		      });
+		    });
 		</script>
 	</head>
 
-	<body id="top">
+	<body id="top" class="drawer drawer--right">
 	  <div id="wrapper">
 		<div id="load_head">
 		</div>
 		<main id="contents">
 			<section class="section" id="photo">
 				<div class="inner">
-					<div class="training">
-						Training Site
-					</div>
 					<div id="photo_show_area">
 						<ul id="slides">
 						     <li><img src="img/top/adDSC_1756.jpg" alt=""></li>
@@ -47,6 +52,9 @@
 					</div>
 					<div id="photo_area">
 						<img src="img/top/ramen-682343_640.jpg" alt="">
+					</div>
+					<div class="training">
+						Training Site
 					</div>
 				</div>
 			</section>
@@ -107,5 +115,7 @@
 		<div id="load_footer">
 		</div>
 	  </div>
+
+
 	</body>
 </html>
