@@ -38,22 +38,23 @@
 	position: relative;
 }
 
+#photo_area {
+	display: none;
+}
+
+
 @media screen and (max-width:670px){
 	#photo_show_area {
 		display: none;
 	}
 
 	#photo_area {
+		display: block;
 		width:100%;
 		margin:50px auto;
 	}
 }
 
-@media screen and (min-width:670px){
-	#photo_area {
-		display: none;
-	}
-}
 #photo_area img {
 	width:80%;
 	text-align: center;

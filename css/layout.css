@@ -120,6 +120,13 @@ header .inner nav {
 header nav .navblock img {
 	width:120px;
 }
+header {
+	height: 65px;
+}
+.hamburger {
+	display:none;
+}
+
 
 @media screen and (max-width:670px){
 	header {
@@ -132,6 +139,10 @@ header nav .navblock img {
   	.headerlogo {
 		font-size: 1.7em!important;
 		margin-top: 12px;
+	}
+
+	.hamburger {
+		display:block;
 	}
 
 	.hamburger .fa {
@@ -170,17 +181,6 @@ header nav .navblock img {
 	.drawer-hamburger {
 		top:-5px;
 	}
-
-}
-
-@media screen and (min-width:670px){
-	header {
-  		height: 65px;
-	}
-	.hamburger {
-		display:none;
-	}
-
 
 }
 
